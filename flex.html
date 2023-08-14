@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>flex</title>
+<style>
+.flex-container {
+  padding:20px;
+  display: flex;
+  background-color: DodgerBlue;
+  flex-direction:row;
+  justify-content:space-between;
+}
+<!-- "In CSS, the .flex-container > div selector is used to target <div> elements that are direct children of elements with the class "flex-container". This selector is often used in conjunction with the CSS Flexbox layout to apply styles specifically to the immediate child <div> elements within a container that has the "flex-container" class." --> 
+<!--
+.flex-container > div {
+  background-color: grey;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px; 
+}
+-->
+.item1{
+order:1
+}
+.item2{
+order:3;
+}
+
+</style>
+<body>
+<div class="flex-container">
+<div class="item1"> one </div>
+<div class="item2"> two </div>
+<div style="flex-basis:200px;"> three </div>
+<div> four </div>
+</div>
+
+</body>
+</html>
